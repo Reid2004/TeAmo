@@ -6,15 +6,25 @@ body {
 }
 
 #texto-corazon {
-    position: absolute;
+    position: fixed;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     font-family: 'Amatic SC', cursive;
-    font-size: 60px;
+    font-size: 6vw;
     color: #ffffff;
     text-shadow: 0 0 10px #00f0ff, 0 0 20px #00f0ff, 0 0 40px #00f0ff;
     text-align: center;
     pointer-events: none;
-    width: 100vw;
+    width: 90vw;
+    max-width: 100vw;
+    z-index: 10;
+    white-space: nowrap;
+}
+
+@media (max-width: 600px) {
+    #texto-corazon {
+        font-size: 10vw;
+        width: 98vw;
+    }
 }
